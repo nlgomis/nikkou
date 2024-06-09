@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日光</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body class="overflow-x-hidden">
+    <div class="flex flex-col sm:flex-row min-h-screen">
+         
+        <div class="bg-black bg-opacity-40 text-black h-20 w-full sm:w-48 p-5 fixed-left fixed-top flex items-center justify-center">
+            <div class="navbar-content text-white space-y-2">
+                <a href='#Home' class="nav-item text-2xl" style="font-family: 'Shippori Mincho', serif;"><strong>日光</strong></a>
+                <a href="#About" class="nav-item text-sm">About</a>
+                <a href="#History" class="nav-item text-sm">History</a>
+                <a href="#Access" class="nav-item text-sm">Access</a>
+                <a href="#Gallery" class="nav-item text-sm">Gallery</a>
+            </div>
+        </div>
+        <div id='Home' class="flex-1 font-light sm:ml-48 mt-24  sm:mt-0">
+             <div class="flex flex-col min-h-sreen-1/2 sm:h-screen bg-cover justify-center relative" style="background-image: url('images/8.jpg'); background-repeat: no-repeat; background-size: cover;">
+                <div class="px-2 py-48 sm:p-4 ml-12 sm:ml-48" id="animated-text">
+                    <h2 class="text-3xl sm:text-8xl font-bold text-white">日光</h2>
+                    <p class="text-2xl sm:text-2xl mt-7 ml-4 text-white"><bold>Where Nature’s Masterpiece Unfold</bold></p>
+                </div>
+            </div>
+            <div id='About' class="flex flex-col sm:flex-row sm:ml-6 my-44 mx-10">
+                <div class="w-full sm:w-full lg:w-1/2 p-4 mt-10 mr-10">
+                    <h2 class="text-4xl font-bold text-#C2CEA7">About Nikkou</h2>
+                    <p id='creamcolor' class="mt-16 text-lg text-#fdfbd4">Nikko is located in the northwestern part of Tochigi Prefecture, best known for its vast and rich nature and the many famous sightseeing spots, including historical shrines and temples. It's a place where magnificent architecture, deep history, and untouched nature merge.</p>
+                </div>
+                <div class="w-full sm:hidden lg:block sm:w-1/2 mt-15">
+                    <img src="images/19.jpeg" alt="Nikkou Image" class="h-full object-cover rounded-lg m-2">
+                </div>
+            </div>
+            
+            
+            
+            
+            <div id='History'  class="flex flex-col my-44 sm-h-screen bg-cover sm:ml-6">
+                <div class="p-4">
+                    <h2 class="text-4xl sm:text-4xl my-6 font-bold">History of Traditional Temples</h2>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between sm:pr-20 pr-5">
+                    <img src="images/14.jpg" alt="Image 1" class="w-full sm:w-1/3 object-cover rounded-lg m-2">
+                    <img src="images/15.jpg" alt="Image 2" class="w-full sm:w-1/3 object-cover rounded-lg m-2">
+                    <img src="images/17.jpg" alt="Image 3" class="w-full sm:w-1/3 object-cover rounded-lg m-2">
+                </div>
+                <p id='creamcolor' class="text-lg mt-10 m-5 sm:text-xl sm:mr-10 text-#fdfbd4">The area of Nikko has been a Shinto forest since pre-historic times. It has had Buddhist temples since the 9th century. The shrines and temples of Nikko, together with their natural surroundings, have for centuries been a sacred site known for its architectural and decorative masterpieces.</p>
+
+            </div>
+            
+
+            <div id='Access' class="flex flex-col my-44 p-4 sm:ml-6">
+                
+                <h2 class="text-4xl font-bold">How to Arrive</h2>
+                <div class="sm:flex mt-6">
+                    <img src="images/11.png" alt="Image description" class="sm:w-1/3 sm:hidden lg:block w-full rounded-lg mr-5">
+                    <div id='creamcolor' class="sm:w-full lg:w-1/2 mt-10 text-#fdfbd4">
+                        <p class="text-lg ml-4">Nikko is located about 125 kilometers north of Tokyo and makes a good one or two day trip from Tokyo. You can get there from Tokyo in about two hours.</p>
+                        <p class="text-lg ml-4">Japan Railways and Tobu Railway jointly operate limited express services between JR Shinjuku Station and Tobu Nikko Station. The journey takes about two hours (reservations necessary). JR Kanto Bus runs highway buses several times a day from Shinjuku to Nasu Onsen.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+           <div id='Gallery' class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-44 p-4 mr-4 sm:ml-2 mb-5 ">
+            <h2 class="text-4xl font-bold col-span-full sm:col-span-2 mb-6 sm:ml-2">Gallery</h2>
+            <img src="images/20.jpg" alt="Image 1" class="object-cover rounded-lg sm:mx-2 mx-2">
+            <img src="images/21.jpg" alt="Image 2" class="object-cover rounded-lg sm:mx-2 mx-2">
+            <img src="images/22.jpg" alt="Image 3" class="object-cover rounded-lg sm:mx-2 mx-2">
+            <img src="images/23.jpg" alt="Image 4" class="object-cover rounded-lg sm:mx-2 mx-2">
+        </div>
+
+         
+        </div>
+        <div id="progress" class="fixed bottom-0 right-0 h-1 w-0 bg-green-500"></div>
+
+    </div>
+   
+    <script src="js/main.js"></script>
+</body>
+
+</html>
